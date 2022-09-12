@@ -18,7 +18,8 @@ class WordAnalysis:
     """ 
 
     def __init__(self):
-        pass
+        self.__removed=[]
+        self.__dictWords = dict()
 
     def __str__(self):
         pass
@@ -30,11 +31,17 @@ class WordAnalysis:
         pass
 
     def ExtractWords(self, text):
+        """
+            1). Strips off all punctuations, numbers, and symbols, only words are kept, and tries to
+                remove non-words as much for example, single letter words.
+            2). Converts the plurals to singular words, and converts the capitalized words to lowercase
+                words. 
+            3)  Counts the frequency of the words, and save them in a dictionary
+        """
         pass
 
     def Show(self, freq):
         pass
-
 
 
 
